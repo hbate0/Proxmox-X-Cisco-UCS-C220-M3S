@@ -24,12 +24,15 @@ megacli -EncInfo -a0
 9. The following instructions come from here: https://www.broadcom.com/support/knowledgebase/1211161498596/megacli-cheat-sheet--live-examples
    
    To enable JBOD configuration follow these steps. NOTE: These steps cannot be undone.
+   ```
    megacli -PDMakeJBOD -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL
+   ```
    You need to run encinfo (see above identify enclosure) and do not type E, only 252:4
    Where 252 is Enclosure and 4 is Slot
    Live example:
+   ```
    megacli -pdmakejbod -physdrv [252:4] –a0
-   
+   ```
 10. Once the configuration is done reboot.
 
 11. Depending if you want to reinstall Proxmox to a bigger disk you can configure the disks with ZFS now.
