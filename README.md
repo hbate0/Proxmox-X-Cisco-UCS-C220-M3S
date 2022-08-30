@@ -28,8 +28,7 @@ megacli -EncInfo -a0
    megacli -PDMakeJBOD -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL
    ```
    You need to run encinfo (see above identify enclosure) and do not type E, only 252:4
-   Where 252 is Enclosure and 4 is Slot
-   Live example:
+   Where 252 is Enclosure and 4 is Slot, here is an example of this below:
    ```
    megacli -pdmakejbod -physdrv [252:4] –a0
    ```
