@@ -17,8 +17,10 @@ After struggling to find help online releasing my steps in this setup.
 
 7. Once MegaCLI is installed it is time to do a JBOD configuration on the server so we can get passthrough for Proxmox.
 
-8. Identify the enclosure with the command " megacli -EncInfo -a0 "
-
+8. Identify the enclosure with the command: 
+'''
+megacli -EncInfo -a0
+'''
 9. The following instructions come from here: https://www.broadcom.com/support/knowledgebase/1211161498596/megacli-cheat-sheet--live-examples
    
    To enable JBOD configuration follow these steps. NOTE: These steps cannot be undone.
